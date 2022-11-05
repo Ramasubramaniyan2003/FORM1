@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+,<head>    <title>form</title>
+    <h1 style="text-align:center;"><b>FORM</b></h1>
+</head>
+<style>
+    body{
+        background-color:aliceblue;
+    }
+    form{
+        text-align: center;
+        background-color: azure;
+    }
+    input{
+        border-radius: 3px;
+    }
+</style>
+<script>
+ var x=Document.getElementById("newpassword");
+ var x1=Document.getElementById("confirmpassword");
+function mypass(){
+ if(x==x1){
+alert("password confirmed");
+ }
+ else{
+    alert("invalid password");
+}
+}
+   </script> 
+<body>
+    <form>
+    <label>FName</label><br>
+    <input type="text" placeholder="First name" id="fname"><br><br>
+    <label>Lname</label><br>
+    <input type="text" placeholder="Last name" id="Lname"><br><br>
+    <label>PhoneNO</label><br>
+    <input type="number" placeholder="Phoneno" id="phoneno"><br><br>
+    <label>Email</label><br>
+    <input type="email" placeholder="Email" id="Email"><br><br>
+    <label>country</label><br>
+    <input type="text" placeholder="Country" id="country"><br><br>
+    <label>Role</label>
+    <select>
+        <option>
+            Student
+        </option>
+        <option>
+            Admin
+        </option>
+        <option>
+            Faculty
+        </option>
+    </select><br><br>
+    <label>Dob</label><br>
+    <input type="date" id="date"><br><br>
+    <label>New password</label><br>
+    <input type="password" name="newpassword" minlength="8" placeholder="new password"><br><br>
+    <label>confirm password</label><br>
+    <input type="password" name="confirmpassword" minlength="8" placeholder="confirm password"><br><br>
+    <input type="submit" onclick="mypass"><br><br>
+    <input type="checkbox"><label>Accept terms and conditions</label><br>
+
+    </form>
+</body>    
+</html>
